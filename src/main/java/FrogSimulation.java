@@ -20,15 +20,17 @@ public class FrogSimulation
 		int hops = 0;
 
 		while(hops < maxHops){
+			position += hopDistance();
+			
 			if(position < 0)
 				return false;
 			if(position >= goalDistance)
 				return true;
 
-			position += hopDistance();
 			hops++;
 		}
 		return false;
+		
 	}
 	
 	public double runSimulations(int num)
