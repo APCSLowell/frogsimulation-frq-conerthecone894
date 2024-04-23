@@ -45,7 +45,7 @@ public class FrogSimulation
 				completed++;
 			total++;
 		}
-		return completed/total;
+		return (double)completed/total;
 	}
 	
 	
